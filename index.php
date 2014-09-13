@@ -216,7 +216,7 @@ function init_nm_woo_gateway(){
 					
 					$product 				= new WC_Product( $item['product_id'] );
 					$item_price 			= $product -> get_price();
-					$item_formatted_name 	= $product -> get_formatted_name();
+					$item_formatted_name 	= $item['name'] . ' (Product ID: '.$item['product_id'].')';
 				
 					$twoco_args['li_'.$twoco_product_index.'_type'] 	= 'product';
 					$twoco_args['li_'.$twoco_product_index.'_name'] 	= sprintf( __( 'Order %s' , 'woocommerce'), $order->get_order_number() ) . " - " . $item_formatted_name;
