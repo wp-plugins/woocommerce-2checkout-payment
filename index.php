@@ -75,7 +75,7 @@ function init_nm_woo_gateway(){
 					'inline' => array(
 							'title' => __( 'Enable/Disable Inline Checkout', 'woocommerce' ),
 							'type' => 'checkbox',
-							'label' => __( 'Enable/Disable Inline - It is PRO Feature get <a href="" target="_blank">Pro Version</a>', 'woocommerce' ),
+							'label' => __( 'Enable/Disable Inline - It is PRO Feature get <a href="http://www.najeebmedia.com/2checkout-payment-gateway-for-woocommerce/" target="_blank">Pro Version</a>', 'woocommerce' ),
 							'default' => 'yes'
 					),
 					'seller_id' => array(
