@@ -4,7 +4,7 @@ Tags: payment gateway, 2co payment gateway, 2checkout woocommerce payment, wooco
 Donate link: http://www.najeebmedia.com/donate
 Requires at least: 1.0
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,7 +55,12 @@ Yes, please visit this [Quick 2Checkout Guide](http://www.najeebmedia.com/best-p
 3. Itemized checkout
 
 == Changelog ==
-It's first release
+= 1.0 =
+* It's first release
+
+= 1.1 =
+* fix callback url issue when payment is made.
+* some labels are updated.
 
 == Upgrade Notice ==
 Nothing
