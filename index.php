@@ -45,7 +45,6 @@ function init_nm_woo_gateway(){
 			$this->title 				= $this->get_option( 'title' );
 			$this->description 			= $this->get_option( 'description' );
 			$this->seller_id			= $this->get_option( 'seller_id' );
-			$this ->ins_url   			= str_replace( 'https:', 'http:', add_query_arg( 'wc-api', 'wc_gateway_nm_twocheckout', home_url( '/' ) ) );
 			$this -> demo 				= $this -> get_option('demo');
 			$this -> pay_method 		= $this -> get_option('pay_method'); 
 				
@@ -187,7 +186,9 @@ function init_nm_woo_gateway(){
 			$twoco_args['ship_zip']				= $order->shipping_country;
 			$twoco_args['ship_country']			= $order->shipping_postcode;
 			
-			$twoco_args['x_receipt_link_url'] = $this->ins_url;
+			$twoco_args['x_receipt_link_url'] 	= str_replace( 'https:', 'http:', add_query_arg ('wc-api', 'WC_Gateway_Twocheckout', $this->get_return_url( $order )) );
+			$twoco_args['return_url']			= str_replace('https', 'http', $order->get_cancel_order_url());
+			
 			
 			//setting payment method
 			if ($this -> pay_method)
