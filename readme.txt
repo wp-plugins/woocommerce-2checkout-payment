@@ -2,9 +2,9 @@
 Contributors: nmedia
 Tags: payment gateway, 2co payment gateway, 2checkout woocommerce payment, woocommerce payment gateway
 Donate link: http://www.najeebmedia.com/donate
-Requires at least: 1.0
-Tested up to: 4.0
-Stable tag: 1.1
+Requires at least: 3.5
+Tested up to: 4.1
+Stable tag: 1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,7 +39,7 @@ In 2Checkout Seller Area you will find your Account Number on the top right of t
 = How set page redirect =
 Go into your **Account -> Site Management** and setup:
 
-* Set the **Direct Return** as **Header Redirect (Your Store URL)**.
+* Set the **Direct Return** as **Given links back to my website**.
 * Fill the Approved URL using a URL like:[http://yourdomain.com/?wc-api=wc_gateway_nm_twocheckout]
 * Set your **Secret Word**
 * Now you need to set **Notification URL** [See how](http://www.najeebmedia.com/best-payment-gateway-to-accept-payment-for-your-business "2Checkout Guide")
@@ -61,6 +61,10 @@ Yes, please visit this [Quick 2Checkout Guide](http://www.najeebmedia.com/best-p
 = 1.1 =
 * fix callback url issue when payment is made.
 * some labels are updated.
+
+= 1.2 =
+* Now Secret word support added in plugin
+* clear the cart once order is verified.
 
 == Upgrade Notice ==
 Nothing
