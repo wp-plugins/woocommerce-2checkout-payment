@@ -203,7 +203,7 @@ function init_nm_woo_gateway(){
 			$twoco_args['ship_zip']				= $order->shipping_country;
 			$twoco_args['ship_country']			= $order->shipping_postcode;
 			
-			$twoco_args['x_receipt_link_url'] 	= str_replace( 'https:', 'http:', add_query_arg ('wc-api', 'WC_Gateway_NM_TwoCheckout', $this->get_return_url( $order )) );
+			$twoco_args['x_receipt_link_url'] 	= str_replace( 'https:', 'http:', add_query_arg( 'wc-api', 'WC_Gateway_Twocheckoutpp', home_url( '/' ) ) );
 			$twoco_args['return_url']			= str_replace('https', 'http', $order->get_cancel_order_url());
 			
 			
