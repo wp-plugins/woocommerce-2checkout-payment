@@ -290,7 +290,7 @@ function init_nm_woo_gateway(){
 			
 			$wc_order_id 	= $_REQUEST['merchant_order_id'];
 			
-			if ($this -> demo == 'yes'){
+			if ($this -> demo == 'yes' || (isset($_REQUEST['demo']) && $_REQUEST['demo'] == 'Y') ){
 				$compare_string = $this->secret_word . $this->seller_id . "1" . $_REQUEST['total'];
 			}else{
 				$compare_string = $this->secret_word . $this->seller_id . $_REQUEST['order_number'] . $_REQUEST['total'];
