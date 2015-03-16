@@ -4,7 +4,7 @@ Tags: payment gateway, 2co payment gateway, 2checkout woocommerce payment, wooco
 Donate link: http://www.najeebmedia.com/donate
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,5 +74,9 @@ Yes, please visit this [Quick 2Checkout Guide](http://www.najeebmedia.com/best-p
 
 = 1.5 =
 * fixed return url issue
+= 1.6 =
+* BUG Fixed: Variable products prices were not correct, now it's fixed
+* Set Product as Tangible or Intangible
+* Sending Product ID to Cart Data
 == Upgrade Notice ==
 Nothing
