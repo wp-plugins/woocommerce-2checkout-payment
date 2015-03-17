@@ -275,7 +275,7 @@ function init_nm_woo_gateway(){
 					$twoco_args['li_'.$twoco_product_index.'_name'] 	= sprintf( __( 'Order %s' , 'woocommerce'), $order->get_order_number() ) . " - " . $item_formatted_name;
 					$twoco_args['li_'.$twoco_product_index.'_quantity'] = $item['qty'];
 					$twoco_args['li_'.$twoco_product_index.'_price'] 	= number_format( $order->get_item_total( $item, false ), 2, '.', '' );
-					$twoco_args['li_'.$twoco_product_index.'_product_id'] = $tmp_sku;
+					$twoco_args['li_'.$twoco_product_index.'_product_id'] = $_sku;
 					$twoco_args['li_'.$twoco_product_index.'_tangible'] = $tangible;
 					
 					$twoco_product_index++;
