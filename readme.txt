@@ -3,8 +3,8 @@ Contributors: nmedia
 Tags: payment gateway, 2co payment gateway, 2checkout woocommerce payment, woocommerce payment gateway
 Donate link: http://www.najeebmedia.com/donate
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 1.6
+Tested up to: 4.2
+Stable tag: 1.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,5 +78,7 @@ Yes, please visit this [Quick 2Checkout Guide](http://www.najeebmedia.com/best-p
 * BUG Fixed: Variable products prices were not correct, now it's fixed
 * Set Product as Tangible or Intangible
 * Sending Product ID to Cart Data
+= 1.7 =
+* Currency code passed to checkout
 == Upgrade Notice ==
 Nothing
